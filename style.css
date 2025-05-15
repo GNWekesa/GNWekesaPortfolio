@@ -7,8 +7,40 @@ html, body {
   padding: 0;
   background-color: #F0F8FF !important;/*am forcing the entire webpage to have this color since for the sections,
   some refuse, but am preserving their code*/
-  
+  /* my bacground image to be peonies.png*/
+   background-image: url('images/peonies.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
+footer {
+  margin-bottom: 80px; /* Space for WhatsApp icon */
+  min-height: 100px; /* Make sure it has visible area */
+}
+  /*style for my date*/
+.current-date {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 1.6rem;
+  font-family: Garamond, serif; /* More playful font */
+  color: #003366;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  transition: transform 0.2s ease-in-out;
+}
+
+.current-date:hover {
+  transform: scale(1.05);
+}
+
+
+
 
  /* Custom animation for GNWekesa name*/
  @keyframes glow {

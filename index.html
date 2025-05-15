@@ -4,8 +4,12 @@
   <meta charset="UTF-8"> <!-- Sets the character encoding for the document to UTF-8 -->
   <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures proper rendering on mobile devices -->
   <title>Gabriella NW - Portfolio</title> <!-- Sets the title of the webpage -->
+  <!--icon that appears on the browser tab-->
+  <link rel="icon" href="images/myfullstacklogoNoBGAIgen.png" type="image/png">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--Google font-->
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <!-- Flowbite CSS to add carousel to my page-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
@@ -38,8 +42,8 @@
 
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#about">
-          <i class="bi bi-person-circle me-2"></i> About Me
+        <a class="nav-link" href="#about"><!--# because the section is in same page-->
+          <i class="bi bi-person-circle me-2"></i> About Me <!--i tag introduces an icon-->
         </a>
       </li> 
       <li class="nav-item">
@@ -68,7 +72,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#projects">
+        <a class="nav-link" href="projects.html">
           <i class="bi bi-folder2-open me-2"></i> Projects
         </a>
       </li>
@@ -81,13 +85,25 @@
   </div>
 </nav>
 
-<!-- Hero Section with Overlay -->
+<!-- Hero Section with Peonies Overlay -->
 <section class="position-relative d-flex align-items-center" style="min-height: 90vh; overflow: hidden;">
-  <!-- Bluish Overlay -->
-  <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(33, 150, 243, 0.1); z-index: 0;"></div>
+  <!-- Peonies Overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                url('images/peonies.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+  "></div>
 
   <!-- Content Container -->
-  <div class="container position-relative" style="z-index: 1;">
+    <div class="container position-relative" style="z-index: 1;">
+    <!-- Date aligned to the right -->
+    <p id="current-date" class="current-date" class="text-muted text-end" style="font-size: 1rem; position: absolute; top: 1rem; right: 2rem; z-index: 2;">
+      Today's Date: <span id="current-date"></span>
+    </p>
     <div class="row align-items-center">
       <!-- Text Content -->
       <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
@@ -99,13 +115,15 @@
            style="font-family: Garamond, serif; font-size: 1.25rem; line-height: 1.8; color: #001C6C;">
           Software Engineer<br>
           I love website development and have been actively working on my full stack development skills since July 2023.<br>
-          I can give your business a new creative start/boost right away!
+          I can give your business a new creative start/boost right away!.
+          Open to remote work
         </p>
-            <!-- Buttons -->
-            <div class="about-buttons d-flex gap-3 flex-wrap mt-4">
-                <a href="#contact" class="btn fw-semibold text-white" style="background-color: #001C6C;">Hire Me</a>
-                <a href="#projects" class="btn fw-semibold text-white" style="background-color: #001C6C;">My Projects</a>
-            </div>
+        <!-- Buttons -->
+        <div class="about-buttons d-flex gap-3 flex-wrap mt-4">
+          <a href="#contact" class="btn fw-semibold text-white" style="background-color: #001C6C;">Hire Me</a>
+          <a href="projects.html" class="btn fw-semibold text-white" style="background-color: #001C6C;">
+            <i class="bi bi-box-arrow-up-right me-2"></i>My Projects</a>
+        </div>
       </div>
 
       <!-- Profile Image -->
@@ -118,7 +136,8 @@
   </div>
 </section>
 
-<!-- About Section -->
+
+<!-- About Section previous bg had this only style="background-color: #F0F8FF; color: black;"-->
 <section id="about" class="py-5 text-center" style="
     background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
                 url('images/mybinaryNoBG.png');
@@ -143,8 +162,6 @@
                     <!-- Buttons -->
                     <div class="about-buttons d-flex gap-3 flex-wrap mt-4">
                         <a href="#contact" class="btn fw-semibold text-white" style="background-color: #001C6C;">Contact Me</a>
-                        <a href="Gabriella_CV.pdf" download class="btn fw-semibold text-white" style="background-color: #001C6C;">Download CV</a>
-                    </div>
                 </div>
 
                 <!-- Image Column -->
@@ -159,8 +176,16 @@
 </section>
 
 
-<!-- Hobbies Section -->
-<section id="education" style="background-color: #F0F8FF; color: black;">
+<!-- Hobbies Section the background is my peonies flowers-->
+<section id="about" style="
+  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+              url('images/peonies.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+">
   <div class="container py-5">
     <div class="row mb-5">
       <div class="col">
@@ -266,7 +291,15 @@
 </section>
 
   <!-- Expertise Section with #F0F8FF Light Blue Background and black Text -->
-  <section id="expertise" class="py-5" style="background-color: #F0F8FF; color: black;">
+  <section id="expertise" style="
+  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+              url('images/peonies.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+">
   <!-- this title is animated with a hover underline color is in css file-->
   <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
   <i class="bi bi-tools me-2" style="color: #000000;"></i> <!-- this puts a css icon of working tools-->
@@ -340,7 +373,16 @@
 
   <!-- Education Section with Full-Screen #F0F8FF Background,black Text  -->
    <!-- notice that i wrapped my section inside div tags to style with a margin that has better width, the technique i used on my about section is different-->
-  <div style="background-color: #F0F8FF; width: 100%;">
+  <!--style="background-color: #F0F8FF; width: 100%;" -->
+  <div style="
+  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+              url('images/peonies.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+">
     <section id="education" class="py-5 text-center" style="color: black;">
       <div class="container py-5">
         <div class="row align-items-center">
@@ -379,7 +421,15 @@
   </div>
 
   <!-- Experience Section with #F0F8FF Light Blue Background and Black Text -->
-<section id="experience" class="py-5" style="background-color: #F0F8FF; color: black;">
+<section id="experience" style="
+  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+              url('images/peonies.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+">
   <div class="container">
     <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
       Professional Experience
@@ -397,7 +447,7 @@
           <ul class="list-unstyled">
             <li>🌐 Full-stack web development (HTML, CSS, JS)</li>
             <li>🐍 Python scripting & automation</li>
-            <li> 🐬 MySQL backend integration</li>
+            <li>🐬 MySQL backend integration</li>
           </ul>
         </div>s
 
@@ -476,7 +526,15 @@
   
 
 <!-- Services Section with #F0F8FF Light Blue Background and black Text -->
-<section id="services" style="background-color: #F0F8FF; color: black;">
+<section id="services" style="
+  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+              url('images/peonies.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+">
   <div class="container text-center">
     <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;"></i>Services </h1><br>
     <div class="row g-4">
@@ -522,11 +580,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-      <
       <!-- Service Card 4: Financial Advice -->
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
@@ -541,9 +594,11 @@
         </div>
       </div>
 
+
     </div>
   </div>
 </section>
+
 
 
 <!-- Modal for Website Development -->
@@ -610,19 +665,20 @@
   </div>
 </div>
 
-
-    <!-- the images will have a  "hover scale" or "zoom-in effect on hover" -->
-    <!-- Technical Skills Section with #F0F8FF Light Blue Background and black Text -->
-<!-- Technical Skills Section with Full-Screen #F0F8FF Background -->
-<div style="background-color: #F0F8FF; width: 100%;">
-  <section id="skills" class="py-5" style="color: black;">
-    <div class="container">
+<!-- Skills Section, i shall uncomment the ones i have studied -->
+<section id="skills" class="skills" style="
+  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+              url('images/peonies.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+">
+  <div class="container">
       <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
         Technical Skills
       </h1>
-<!-- Skills Section, i shall uncomment the ones i have studied -->
-<section id="skills" class="skills">
-  <div class="container">
     <div class="skills-grid">
       <div class="skill-card">
         <img src="images/html5-01-svgrepo-com.svg" alt="HTML5">
@@ -641,11 +697,15 @@
         <h3>JavaScript</h3>
       </div>
       <div class="skill-card">
+        <img src="images/node-js-svgrepo-com.svg" alt="Node js">
+        <h3>Node.js</h3>
+      </div>
+      <div class="skill-card">
         <img src="images/tailwind-css-svgrepo-com.svg" alt="Tailwind CSS">
         <h3>Tailwind CSS</h3>
       </div>
       <div class="skill-card">
-        <img src="images/python-svgrepo-com.svg" alt="Tailwind CSS">
+        <img src="images/python-svgrepo-com.svg" alt="Python">
         <h3>Python</h3>
       </div>
       <div class="skill-card">
@@ -654,11 +714,24 @@
       </div>
     </div>
   </div>
+  <!-- Buttons -->
+  <div class="about-buttons d-flex gap-3 flex-wrap mt-4">
+        <a href="projects.html" class="btn fw-semibold text-white" style="background-color: #001C6C;">
+          <i class="bi bi-box-arrow-up-right me-2"></i>My Projects</a>
+  </div>
 </section>
 
 
   <!-- Additional Skills Section in Same Background -->
-  <section class="py-5">
+  <section class="py-5" style="
+  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+              url('images/peonies.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+">
     <div class="container">
       <div class="row align-items-center">
 
@@ -761,7 +834,15 @@
 
   <!-- Interests Section with Full-Screen #F0F8FF Background -->
 <div style="background-color: #F0F8FF; width: 100%;">
-  <section id="interests" style="color: black;" class="py-5">
+  <section id="interests" style="
+  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+              url('images/peonies.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+">
     <div class="container">
       <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
         Interests
@@ -799,98 +880,19 @@
 <!-- End of Interests Section -->
 
 
-<!-- Projects Carousel Section with Full-Screen #F0F8FF Background -->
-<div style="background-color: #F0F8FF; width: 100%;">
-  <section id="projects" style="color: black;" class="py-5">
-    <div class="container">
-      <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
-        Featured Projects
-      </h1>
+  <!-- contact section-->  
+  <section id="contact" style="
+  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+              url('images/peonies.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+">
 
-      <!-- Carousel -->
-      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner rounded-3 shadow-lg">
-
-          <!-- Church YouTube Shorts -->
-          <div class="carousel-item active">
-            <div class="row g-0 align-items-center">
-              <div class="col-md-6">
-                <img src="images/mtzion cbd logo.jpg" class="d-block w-100 img-fluid" alt="Church YouTube Shorts">
-              </div>
-              <div class="col-md-6 p-4">
-                <h3 class="h5 mb-3">Church YouTube Management</h3>
-                <p class="mb-3">Video editing, animated Bible verse shorts for digital ministry</p>
-                <a href="https://www.youtube.com/@mtzioncbd" 
-                   class="btn btn-outline-primary" 
-                   target="_blank">
-                  <i class="bi bi-youtube me-2"></i>View Channel
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- SQL Bookstore Database -->
-          <div class="carousel-item">
-            <div class="row g-0 align-items-center">
-              <div class="col-md-6">
-                <img src="images/databaseAIgen.jpeg" class="d-block w-100 img-fluid" alt="Bookstore Database">
-              </div>
-              <div class="col-md-6 p-4">
-                <h3 class="h5 mb-3">SQL Bookstore Database</h3>
-                <p class="mb-3">E-commerce schema for James Patterson book store</p>
-                <button class="btn btn-outline-secondary" disabled>
-                  <i class="bi bi-github me-2"></i>Code Available on Request
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Alilee Fashion Website -->
-          <div class="carousel-item">
-            <div class="row g-0 align-items-center">
-              <div class="col-md-6">
-                <img src="images/AlileeOfficialLogoTagline.png" class="d-block w-100 img-fluid" alt="Fashion Website">
-              </div>
-              <div class="col-md-6 p-4">
-                <h3 class="h5 mb-3">Alilee Fashion Website</h3>
-                <p class="mb-3">Self-reliance video resource platform</p>
-                <button class="btn btn-outline-secondary" disabled>
-                  <i class="bi bi-link-45deg me-2"></i>Demo Available on Request
-                </button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-<!-- End of Projects Carousel Section -->
-
-
-  <!-- contact form-->  
-  <section id="contact" style="background-color: #F0F8FF; color: black;">
     <div class="container">
       <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;"></i>Contact Me</h1><br>
-      <p class="text-center text-muted mb-5">Get In Touch</p>
       <div class="row g-5">
         <!-- Contact Info -->
         <div class="col-md-4">
@@ -915,41 +917,16 @@
               <p class="text-muted mb-0">Nairobi, Kenya</p>
             </div>
           </div>
-        </div>
-          <!-- Contact Form -->
-          <div class="col-md-8">
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <input type="text" class="form-control bg-light rounded-3 px-3 py-2" 
-                        placeholder="Enter your name" required 
-                        style="border: 2px solid #001C6C;">
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control bg-light rounded-3 px-3 py-2" 
-                        placeholder="Enter your email" required 
-                        style="border: 2px solid #001C6C;">
-                </div>
-                <div class="col-12">
-                  <input type="text" class="form-control bg-light rounded-3 px-3 py-2" 
-                        placeholder="Enter your project" 
-                        style="border: 2px solid #001C6C;">
-                </div>
-                <div class="col-12">
-                  <textarea rows="5" class="form-control bg-light rounded-3 px-3 py-2" 
-                            placeholder="Write your message" required 
-                            style="border: 2px solid #001C6C;"></textarea>
-                </div>
-                <div class="col-12 text-end">
-                  <button type="submit" 
-                    class="btn rounded-3 px-4 py-2 d-inline-flex align-items-center"
-                    style="background-color: #001C6C; color: #fff;">
-                    Send Message
-                    <i class="bi bi-send ms-2"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
+            <div class="d-flex justify-content-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2589.876203419588!2d36.826410197946416!3d-1.2900300856006093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11655c311541%3A0x9dd769ac1c10b897!2sNairobi%20County!5e1!3m2!1sen!2ske!4v1747315833141!5m2!1sen!2ske" 
+              width="100" 
+              height="100" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -958,13 +935,22 @@
 
 
 <!-- Footer -->
-<footer class="text-white pt-5 pb-4" style="background-color: #001C6C; width: 100%;">
+<!-- change text color to white like this class="text-white pt-5 pb-4"-->
+<footer class="pt-5 pb-4" style="
+  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+              url('images/peonies.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+">
   <div class="container text-md-start">
     <div class="row">
       
       <!-- Brand & tagline -->
       <div class="col-md-3 mb-4">
-        <h4 class="fw-bold">GNWekesa</h4>
+        <h4 class="fw-bold">Gabriella Nekesa Wekesa</h4>
         <p>An entrepreneur engrossed with differential change</p>
       </div>
       
@@ -972,17 +958,25 @@
       <div class="col-md-2 mb-4">
         <h5 class="fw-bold border-bottom pb-2">Quick Links</h5>
         <ul class="list-unstyled">
-          <li><a href="#about" class="text-white text-decoration-none d-block py-1">Home</a></li>
-          <li><a href="#about" class="text-white text-decoration-none d-block py-1">About</a></li>
-          <li><a href="#services" class="text-white text-decoration-none d-block py-1">Services</a></li>
-          <li><a href="#projects" class="text-white text-decoration-none d-block py-1">Projects</a></li>
-          <li><a href="#contact" class="text-white text-decoration-none d-block py-1">Contact</a></li>
+          <li><a href="index.html#about" class=" text-decoration-none d-block py-1">
+            <i class="bi bi-box-arrow-up-right me-2"></i>Home</a></li>
+          <li><a href="index.html#about" class="text-decoration-none d-block py-1">
+            <i class="bi bi-box-arrow-up-right me-2"></i>About</a></li>
+          <li><a href="index.html#services" class="text-decoration-none d-block py-1">
+            <i class="bi bi-box-arrow-up-right me-2"></i>Services</a></li>
+          <li><a href="projects.html" class="text-decoration-none d-block py-1">
+            <i class="bi bi-box-arrow-up-right me-2"></i>Projects</a></li>
+          <li><a href="index.html#contact" class="text-decoration-none d-block py-1">
+            <i class="bi bi-box-arrow-up-right me-2"></i>Contact</a></li>
         </ul>
       </div>
 
       <!-- Get In Touch -->
       <div class="col-md-3 mb-4">
         <h5 class="fw-bold border-bottom pb-2">Get In Touch</h5>
+        <a href="https://wa.me/254785687846" target="_blank" class="text-success text-decoration-none">
+           <i class="bi bi-whatsapp"></i> Chat with me on WhatsApp
+        </a>
         <p><i class="bi bi-envelope me-2"></i> gabriellanekwek@gmail.com</p>
         <p><i class="bi bi-telephone me-2"></i> +254 785 687846</p>
         <p><i class="bi bi-geo-alt me-2"></i> Nairobi, Kenya</p>
@@ -992,47 +986,62 @@
       <div class="col-md-4 mb-4">
         <h5 class="fw-bold border-bottom pb-2">Connect With Me</h5>
         <div class="d-flex gap-3 mt-3">
-          <a href="https://github.com/GNWekesa" target="_blank" class="text-white fs-5">
+          <a href="https://github.com/GNWekesa" target="_blank" class="fs-5">
             <i class="bi bi-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/gabriella-n-w-b43951357" target="_blank" class="text-white fs-5">
+          <a href="https://www.linkedin.com/in/gabriella-n-w-b43951357" target="_blank" class="fs-5">
             <i class="bi bi-linkedin"></i>
           </a>
-          <a href="https://x.com/Gabriella_NW" target="_blank" class="text-white fs-5">
+          <a href="https://x.com/Gabriella_NW" target="_blank" class="fs-5">
             <i class="bi bi-twitter-x"></i>
           </a>
-          <a href="https://www.instagram.com/itis_gabi/" target="_blank" class="text-white fs-5">
+          <a href="https://www.instagram.com/itis_gabi/" target="_blank" class="fs-5">
             <i class="bi bi-instagram"></i>
           </a>
-          <a href="https://www.facebook.com/alileetransformed" target="_blank" class="text-white fs-5">
+          <a href="https://www.facebook.com/alileetransformed" target="_blank" class="fs-5">
             <i class="bi bi-facebook"></i>
           </a>
-          <a href="mailto:gabriellanekwek@gmail.com" class="text-white fs-5">
+          <a href="mailto:gabriellanekwek@gmail.com" class="fs-5">
             <i class="bi bi-envelope-fill"></i>
           </a>          
         </div>
       </div>
     </div>
 
+
+    <!--d-flex makes the container a flexbox.
+    justify-content-between pushes the two elements to opposite ends (left and right).
+    align-items-center ensures vertical alignment is centered.-->
     <!-- Bottom copyright -->
-    <div class="text-center mt-4 pt-3 border-top">
+    <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
       <p class="mb-0">&copy; 2025 Gabriella Nekesa Wekesa. All rights reserved.</p>
       <small>
-        <a href="#" class="text-white text-decoration-none mx-2">Privacy Policy</a> |
-        <a href="#" class="text-white text-decoration-none mx-2">Terms of Service</a>
+        <a href="#" class="text-decoration-none mx-2">Privacy Policy</a> |
+        <a href="#" class="text-decoration-none mx-2">Terms of Service</a>
       </small>
     </div>
+
   </div>
 </footer>
-
-
 
 <!-- scroll to top icon-->
 <a href="#" class="scrollup" id="scroll-up">
   <i class="fas fa-arrow-up scrollup__icon"></i>
 </a>
 
-  <!-- Flowbite JS to add carousel-->
+<!-- Script to display current date -->
+ <!-- This script gets the current date and inserts it into the <span> in my hero section
+  // Get current date-->
+  <script>
+  const today = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+  // Format and inject the date
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('current-date').textContent = today.toLocaleDateString('en-US', options);
+  });  
+  </script>
+<!-- Flowbite JS to add carousel-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 <!-- Bootstrap JS (with Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
