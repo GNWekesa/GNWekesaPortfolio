@@ -14,22 +14,7 @@ html, body {
     background-attachment: fixed;
     background-position: center;
 }
-/* NAVBAR CSS */
-.navbar-collapse {
-  background-color: #001C6C; /* Match navbar color */
-  padding: 15px;
-  z-index: 1001;
-}
 
-@media (max-width: 767px) {
-  .navbar-collapse {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-  }
-}
-/* end of navbar CSS */
 
 footer {
   margin-bottom: 80px; /* Space for WhatsApp icon */
