@@ -23,7 +23,7 @@ footer {
 /*style for greetings section*/
 .greeting-section {
   padding: 10px;
-  margin: 20px auto;
+  margin: 10px auto 0 auto; /* reduce bottom margin to 0 */
   max-width: 600px;
   background-image: url('images/peonies.png'); /* adjust path as needed */
   background-size: cover;
@@ -31,13 +31,15 @@ footer {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+/* Make height roughly 4 lines of text */
 .greeting-container {
-  padding: 4rem 0;
+  padding: 4rem 0;/* reduced vertical padding */
+  min-height: 6em; /* approx. 4 lines of text at normal line-height */
 }
 
 .greeting-text {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 1.0rem;
   color: #001C6C;
   font-weight: 700;
   transition: opacity 0.5s ease-in-out;
@@ -46,7 +48,7 @@ footer {
 .greeting-text small {
   font-family: Garamond, serif;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   color: #001C6C;
   opacity: 0.8;
   margin-top: 0.5rem;
