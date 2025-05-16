@@ -23,76 +23,69 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- for Google Fonts: Playfair Display -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+  
+   <!-- Navigation Bar (Bootstrap version) -->
 <nav class="navbar navbar-expand-md navbar-dark mb-4 rounded" style="background-color: #001C6C; width: 100%; position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
-  <div class="container-fluid">
-    <!-- Brand and toggle button -->
-    <a href="#" class="gnw-brand navbar-brand d-flex align-items-center">
+  <div class="container-fluid justify-content-center">
+    <!-- My animated name, it has dedicated CSS in my css file -->
+
+    <a href="#" class="gnw-brand d-flex align-items-center">
       <img src="images/myfullstacklogoNoBGAIgen.png" alt="Logo" style="height: 40px; margin-right: 10px;">
       GNWekesa
     </a>
     
-    <!-- Hamburger button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-      <ul class="navbar-nav">
-        <!-- Your navigation items -->
-        <li class="nav-item">
-          <a class="nav-link" href="#about">
-            <i class="bi bi-person-circle me-2"></i> About Me
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#expertise">
-            <i class="bi bi-tools"></i> Expertise
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#education">
-            <i class="bi bi-book me-2"></i> Education
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">
-            <i class="bi bi-person-workspace me-2"></i> Experience
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services">
-            <i class="bi bi-person-lines-fill me-2"></i> Services
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">
-            <i class="bi bi-lightning-charge me-2"></i> Skills
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html">
-            <i class="bi bi-folder2-open me-2"></i> Projects
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">
-            <i class="bi bi-envelope me-2"></i> Contact
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#about"><!--# because the section is in same page-->
+          <i class="bi bi-person-circle me-2"></i> About Me <!--i tag introduces an icon-->
+        </a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="#expertise">
+          <i class="bi bi-tools"></i> Expertise
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#education">
+          <i class="bi bi-book me-2"></i> Education
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#experience">
+          <i class="bi bi-person-workspace me-2"></i> Experience
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">
+          <i class="bi bi-person-lines-fill me-2"></i> Services
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">
+          <i class="bi bi-lightning-charge me-2"></i> Skills
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">
+          <i class="bi bi-folder2-open me-2"></i> Projects
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">
+          <i class="bi bi-envelope me-2"></i> Contact
+        </a>
+      </li>
+    </ul>      
   </div>
 </nav>
 
-
 <!--greetings section for all languages, languages are in JS script-->
-<section class="position-relative d-flex align-items-center" style="min-height: 10vh; overflow: hidden;">
+<section class="position-relative d-flex align-items-center" style="min-height: 40vh; overflow: hidden;">
   <!-- Peonies Overlay -->
   <div class="position-absolute top-0 start-0 w-100 h-100" style="
     background:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
@@ -1070,8 +1063,6 @@
   </script>
 <!-- Flowbite JS to add carousel-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
-<!-- Bootstrap JS and dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Bootstrap JS (with Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- JS for my flipbook i tried putting in a separate js file but that did not work-->
