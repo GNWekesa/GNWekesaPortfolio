@@ -8,7 +8,10 @@ html, body {
   background-color: #F0F8FF !important;/*am forcing the entire webpage to have this color since for the sections,
   some refuse, but am preserving their code*/
   /* my bacground image to be peonies.png*/
-   background-image: url('images/peonies.png');
+  /*put linear gradient code first the image, so that it loads first, otherwise, it will cover the image */
+   background-image: 
+                      linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
+                      url('images/peonies.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

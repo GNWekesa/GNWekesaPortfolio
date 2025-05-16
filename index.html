@@ -33,17 +33,23 @@
      style="background-color: #001C6C; width: 100%; position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
   <div class="container-fluid justify-content-center">
     <!-- My animated name, it has dedicated CSS in my css file -->
-
     <a href="#" class="gnw-brand d-flex align-items-center">
       <img src="images/myfullstacklogoNoBGAIgen.png" alt="Logo" style="height: 40px; margin-right: 10px;">
       GNWekesa
     </a>
-    
-
+    <!--collapsible -->  
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  <!--
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#about"><!--# because the section is in same page-->
-          <i class="bi bi-person-circle me-2"></i> About Me <!--i tag introduces an icon-->
+        <a class="nav-link" href="#about"># because the section is in same page
+          <i class="bi bi-person-circle me-2"></i> About Me <!--i tag introduces an icon
         </a>
       </li> 
       <li class="nav-item">
@@ -61,19 +67,16 @@
           <i class="bi bi-envelope me-2"></i> Contact
         </a>
       </li>
-    </ul>      
+    </ul>
+    
+    -->
   </div>
 </nav>
 
 <!--greetings section for all languages, languages are in JS script-->
 <section class="position-relative d-flex align-items-center" style="min-height: 10vh; overflow: hidden;">
   <!-- Peonies Overlay -->
-  <div class="position-absolute top-0 start-0 w-100 h-100" style="
-    background:  linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
-              url('images/peonies.png') no-repeat center center;
-    background-size: cover;
-    z-index: 0;
-  "></div><!-- the linear gradient makes the image got to the back and have an transparent overaly so text over it is seen-->
+  <div class="position-absolute top-0 start-0 w-100 h-100" ></div><!-- the linear gradient makes the image got to the back and have an transparent overaly so text over it is seen-->
 
   <!-- Greeting Content -->
   <div class="container position-relative text-center" style="z-index: 1;">
@@ -92,15 +95,7 @@
  <!--<section class="position-relative d-flex align-items-start" style="min-height: 40vh; overflow: hidden;"></section>-->
 <section class="position-relative d-flex align-items-start" style="min-height: 20vh; overflow: hidden;">
   <!-- Peonies Overlay -->
-  <div class="position-absolute top-0 start-0 w-100 h-100" style="
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-                url('images/peonies.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: 0;
-  "></div>
+  <div class="position-absolute top-0 start-0 w-100 h-100" ></div>
 
   <!-- Content Container -->
     <div class="container position-relative" style="z-index: 1;">
@@ -142,14 +137,7 @@
 
 
 <!-- About Section previous bg had this only style="background-color: #F0F8FF; color: black;"-->
-<section id="about" class="py-5 text-center" style="
-    background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-                url('images/mybinaryNoBG.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-">
+<section id="about" class="py-5 text-center">
     <div class="container-fluid px-0">
         <div class="container py-5">
                   <!-- my title will have an orchid underline when hovered because of css-->
@@ -181,15 +169,7 @@
 
 
 <!-- Hobbies Section the background is my peonies flowers-->
-<section id="about" style="
-  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-              url('images/peonies.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-">
+<section id="about" >
   <div class="container py-5">
     <div class="row mb-5">
       <div class="col">
@@ -295,15 +275,7 @@
 </section>
 
   <!-- Expertise Section with #F0F8FF Light Blue Background and black Text -->
-  <section id="expertise" style="
-  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-              url('images/peonies.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-">
+  <section id="expertise">
   <!-- this title is animated with a hover underline color is in css file-->
   <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
   <i class="bi bi-tools me-2" style="color: #000000;"></i> <!-- this puts a css icon of working tools-->
@@ -378,15 +350,7 @@
   <!-- Education Section with Full-Screen #F0F8FF Background,black Text  -->
    <!-- notice that i wrapped my section inside div tags to style with a margin that has better width, the technique i used on my about section is different-->
   <!--style="background-color: #F0F8FF; width: 100%;" -->
-  <div style="
-  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-              url('images/peonies.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-">
+  <div>
     <section id="education" class="py-5 text-center" style="color: black;">
       <div class="container py-5">
         <div class="row align-items-center">
@@ -425,15 +389,7 @@
   </div>
 
   <!-- Experience Section with #F0F8FF Light Blue Background and Black Text -->
-<section id="experience" style="
-  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-              url('images/peonies.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-">
+<section id="experience" >
   <div class="container">
     <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
       Professional Experience
@@ -530,15 +486,7 @@
   
 
 <!-- Services Section with #F0F8FF Light Blue Background and black Text -->
-<section id="services" style="
-  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-              url('images/peonies.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-">
+<section id="services" >
   <div class="container text-center">
     <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;"></i>Services </h1><br>
     <div class="row g-4">
@@ -670,15 +618,7 @@
 </div>
 
 <!-- Skills Section, i shall uncomment the ones i have studied -->
-<section id="skills" class="skills" style="
-  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-              url('images/peonies.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-">
+<section id="skills" class="skills" >
   <div class="container">
       <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
         Technical Skills
@@ -727,15 +667,7 @@
 
 
   <!-- Additional Skills Section in Same Background -->
-  <section class="py-5" style="
-  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-              url('images/peonies.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-">
+  <section class="py-5" >
     <div class="container">
       <div class="row align-items-center">
 
@@ -837,16 +769,8 @@
 -->
 
   <!-- Interests Section with Full-Screen #F0F8FF Background -->
-<div style="background-color: #F0F8FF; width: 100%;">
-  <section id="interests" style="
-  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-              url('images/peonies.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-">
+<div >
+  <section id="interests" >
     <div class="container">
       <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
         Interests
@@ -885,15 +809,7 @@
 
 
   <!-- contact section-->  
-  <section id="contact" style="
-  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-              url('images/peonies.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-">
+  <section id="contact" >
 
     <div class="container">
       <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;"></i>Contact Me</h1><br>
@@ -940,15 +856,7 @@
 
 <!-- Footer -->
 <!-- change text color to white like this class="text-white pt-5 pb-4"-->
-<footer class="pt-5 pb-4" style="
-  background: linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-              url('images/peonies.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: black;
-">
+<footer class="pt-5 pb-4" >
   <div class="container text-md-start">
     <div class="row">
       
