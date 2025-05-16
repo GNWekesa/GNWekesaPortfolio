@@ -37,19 +37,11 @@
       <img src="images/myfullstacklogoNoBGAIgen.png" alt="Logo" style="height: 40px; margin-right: 10px;">
       GNWekesa
     </a>
-    <!--collapsible -->  
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  <!--
+    
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#about"># because the section is in same page
-          <i class="bi bi-person-circle me-2"></i> About Me <!--i tag introduces an icon
+        <a class="nav-link" href="#about">
+          <i class="bi bi-person-circle me-2"></i> About Me <!--i tag introduces an icon-->
         </a>
       </li> 
       <li class="nav-item">
@@ -68,8 +60,6 @@
         </a>
       </li>
     </ul>
-    
-    -->
   </div>
 </nav>
 
@@ -617,47 +607,6 @@
   </div>
 </div>
 
-<!-- Skills Section, i shall uncomment the ones i have studied -->
-<section id="skills" class="skills" >
-  <div class="container">
-      <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
-        Technical Skills
-      </h1>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <img src="images/html5-01-svgrepo-com.svg" alt="HTML5">
-        <h3>HTML5</h3>
-      </div>
-      <div class="skill-card">
-        <img src="images/bootstrap-fill-svgrepo-com.svg" alt="Bootstrap">
-        <h3>Bootstrap</h3>
-      </div>
-      <div class="skill-card">
-        <img src="images/css3-02-svgrepo-com.svg" alt="CSS3">
-        <h3>CSS3</h3>
-      </div>
-      <div class="skill-card">
-        <img src="images/javascript-file-svgrepo-com.svg" alt="JavaScript">
-        <h3>JavaScript</h3>
-      </div>
-      <div class="skill-card">
-        <img src="images/node-js-svgrepo-com.svg" alt="Node js">
-        <h3>Node.js</h3>
-      </div>
-      <div class="skill-card">
-        <img src="images/tailwind-css-svgrepo-com.svg" alt="Tailwind CSS">
-        <h3>Tailwind CSS</h3>
-      </div>
-      <div class="skill-card">
-        <img src="images/python-svgrepo-com.svg" alt="Python">
-        <h3>Python</h3>
-      </div>
-      <div class="skill-card">
-        <img src="images/mysql-svgrepo-com.svg" alt="MySQL">
-        <h3>MySQL</h3>
-      </div>
-    </div>
-  </div>
   <!-- Buttons -->
   <div class="about-buttons d-flex gap-3 flex-wrap mt-4">
         <a href="projects.html" class="btn fw-semibold text-white" style="background-color: #001C6C;">
@@ -668,9 +617,45 @@
 
   <!-- Additional Skills Section in Same Background -->
   <section class="py-5" >
+    <h1 class="section-title text-center mb-5 display-6 fw-bold" style="font-family: 'Playfair Display', serif;">
+        Technical Skills
+      </h1>
     <div class="container">
       <div class="row align-items-center">
-
+    <div class="skills-grid">
+          <div class="skill-card">
+            <img src="images/html5-01-svgrepo-com.svg" alt="HTML5">
+            <h3>HTML5</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/bootstrap-fill-svgrepo-com.svg" alt="Bootstrap">
+            <h3>Bootstrap</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/css3-02-svgrepo-com.svg" alt="CSS3">
+            <h3>CSS3</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/javascript-file-svgrepo-com.svg" alt="JavaScript">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/node-js-svgrepo-com.svg" alt="Node js">
+            <h3>Node.js</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/tailwind-css-svgrepo-com.svg" alt="Tailwind CSS">
+            <h3>Tailwind CSS</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/python-svgrepo-com.svg" alt="Python">
+            <h3>Python</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/mysql-svgrepo-com.svg" alt="MySQL">
+            <h3>MySQL</h3>
+          </div>
+        </div>
         <!-- Left Side: Image -->
         <div class="col-lg-6 mb-4 mb-lg-0">
           <img src="images/laptopandcodeAIgen.jpeg" alt="Skills Image" class="img-fluid rounded hover-effect">
@@ -954,6 +939,9 @@
     document.getElementById('current-date').textContent = today.toLocaleDateString('en-US', options);
   });  
   </script>
+<!-- Bootstrap JS (needed for the collapse to work) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <!-- Flowbite JS to add carousel-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 <!-- Bootstrap JS (with Popper) -->
