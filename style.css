@@ -301,8 +301,8 @@ and any section with <span class="d-inline-block hover-text">*/
   
   /* start of style for a flipbook*/
   #flipbook {
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     margin: 0 auto;
     border: 1px solid #ccc;
     overflow: hidden;
@@ -325,6 +325,8 @@ and any section with <span class="d-inline-block hover-text">*/
     margin-top: 20px;
   }
   /* end of start of style for a flipbook*/
+
+
 
   /* style for technical skills section*/
   .skills {
