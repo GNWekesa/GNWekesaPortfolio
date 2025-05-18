@@ -852,15 +852,7 @@
   <div id="footer-placeholder"></div>
 
   <script>
-    // this goes to all html pages to load navbar dynamically
-    fetch('/partials/navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-        // Re-initialize Bootstrap components if needed
-        new bootstrap.Collapse(document.getElementById('navbarNav'));
-      });
-
+  
       // this goes to all html pages to load footer dynamically
       fetch('/partials/footer.html')
         .then(response => response.text())
@@ -891,7 +883,6 @@
   </script>
 <!-- Bootstrap JS (needed for the collapse to work) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 <!-- Flowbite JS to add carousel-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 <!-- Bootstrap JS (with Popper) -->
