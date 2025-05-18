@@ -11,7 +11,7 @@ html, body {
   /*put linear gradient code first the image, so that it loads first, otherwise, it will cover the image */
    background-image: 
                       linear-gradient(rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)),
-                      url('images/peonies.png');
+                      url('assets/images/peonies.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -57,7 +57,7 @@ footer {
 }
 
 .hire-btn:hover {
-  background-color: #cc0066;
+  background-color: #DA70D6;
   color: #fff !important;
 }
  /* end of ustom animation for GNWekesa name*/
@@ -70,8 +70,8 @@ footer {
 .greeting-section {
   padding: 10px;
   margin: 10px auto 0 auto; /* reduce bottom margin to 0 */
-  max-width: 600px;
-  background-image: url('images/peonies.png'); /* adjust path as needed */
+  max-width: 300px;
+  background-image: url('assets/images/peonies.png'); /* adjust path as needed */
   background-size: cover;
   background-position: center;
   border-radius: 12px;
@@ -79,8 +79,8 @@ footer {
 }
 /* Make height roughly 4 lines of text */
 .greeting-container {
-  padding: 4rem 0;/* reduced vertical padding */
-  min-height: 6em; /* approx. 4 lines of text at normal line-height */
+  padding: 0.5rem 0;/* reduced vertical padding */
+  min-height: 3em; /* approx. 3 lines of text at normal line-height */
 }
 
 .greeting-text {
@@ -114,7 +114,7 @@ footer {
   font-family: Garamond, serif; /* More playful font */
   color: #003366;
   font-weight: 700;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #DA70D6;
   padding: 10px 18px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -143,7 +143,7 @@ footer {
   bottom: -6px;
   width: 0%;
   height: 3px;
-  background-color: #DA70D6; /* yellow underline */
+  background-color: #DA70D6; 
   transition: width 0.4s ease;
   text-align: center;
 }
