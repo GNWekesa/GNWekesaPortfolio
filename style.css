@@ -23,6 +23,49 @@ footer {
   margin-bottom: 80px; /* Space for WhatsApp icon */
   min-height: 100px; /* Make sure it has visible area */
 }
+/***********************/
+/*navigation bar styles*/
+ /* Custom animation for GNWekesa name*/
+ @keyframes glow {
+   /* these are the animated colors to be changing*/
+  0% { color: #ffffff; }
+  100% { color: #DA70D6; }
+}
+.gnw-brand {
+  font-size: 2rem;
+  text-align: left; /* Aligns the text to the left */
+  animation: glow 1.5s ease-in-out infinite alternate;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* Custom navbar link color */
+.navbar-dark .navbar-nav .nav-link {
+  color: #DA70D6 !important;
+}
+/* navbar change color on hover and active */
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #001C6C !important; /* white on hover/active */
+}
+/* Hire Button Style */
+.hire-btn {
+  background-color: #001C6C;
+  color: white !important;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover {
+  background-color: #cc0066;
+  color: #fff !important;
+}
+ /* end of ustom animation for GNWekesa name*/
+ /*end of navigation bar styles*/
+ /***********************/
+
+
+
 /*style for greetings section*/
 .greeting-section {
   padding: 10px;
@@ -84,22 +127,6 @@ footer {
 }
 
 
-
-
- /* Custom animation for GNWekesa name*/
- @keyframes glow {
-   /* these are the animated colors to be changing*/
-  0% { color: #ffffff; }
-  100% { color: #DA70D6; }
-}
-.gnw-brand {
-  font-size: 2rem;
-  text-align: left; /* Aligns the text to the left */
-  animation: glow 1.5s ease-in-out infinite alternate;
-  font-weight: bold;
-  text-decoration: none;
-}
- /* end of ustom animation for GNWekesa name*/
 
 /* style for the hover underline effect on my section titles,*/
 .section-title {
