@@ -4,7 +4,7 @@ html, body {
   /*background-color: #FAF9F6 !important; /*background-color: #FAF9F6; am forcing my whole page to have this color since sections have aliceblue*/
   /*The !important ensures it overrides other styles that might be applied from elsewhere.*/
   margin: 0;
-  padding: 0;
+  padding: 0;/*padding-top: 20px;* if i put this, the navbar will be far down in the page*/
   background-color: #F0F8FF !important;/*am forcing the entire webpage to have this color since for the sections,
   some refuse, but am preserving their code*/
   /* my bacground image to be peonies.png*/
@@ -423,3 +423,29 @@ section {
     padding: 3rem 0; /* More space on small screens */
   }
 }
+/*******STYLE FOR projects.html*********/
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .project-img {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 0.375rem 0.375rem 0 0;
+    }
+    .btn-project {
+      background-color: #0d6efd;
+      color: white;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-project:hover {
+      background-color: #0b5ed7;
+      color: white;
+    }
+
+/*******END OF STYLE FOR projects.html*********/

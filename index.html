@@ -25,45 +25,8 @@
 </head>
 <body>
   
-  <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark "><!--fixed-top add this to make it be visible on scroll-->
-  <div class="container-fluid">
-    <!-- My animated name, it has dedicated CSS in my css file -->
-    <a class="navbar-brand d-flex align-items-center gnw-brand" href="#">
-      <img src="assets/images/myfullstacklogoNoBGAIgen.png" alt="Logo" style="height: 40px; margin-right: 10px;">
-      GNWekesa
-    </a>
-
-    <!-- Toggle Button for Mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Navigation Links -->
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#about"><i class="bi bi-person-circle me-2"></i> About Me</a><!--i tag introduces an icon-->
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#services"><i class="bi bi-person-lines-fill me-2"></i> Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="projects.html"><i class="bi bi-folder2-open me-2"></i> Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact"><i class="bi bi-envelope me-2"></i> Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link hire-btn px-3 py-2 ms-2" href="#contact">Hire Me</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
+    <!-- load the navbar-->
+  <div id="navbar-placeholder"></div>
 
 <!--greetings section for all languages, languages are in JS script-->
 <section class="position-relative d-flex align-items-center" style="min-height: 10vh; overflow: hidden;">
@@ -853,7 +816,12 @@
   <div id="footer-placeholder"></div>
 
   <script>
-  
+      // this goes to all html pages to load navbar dynamically
+      fetch('partials/navbar.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('navbar-placeholder').innerHTML = html;
+        });
       // this goes to all html pages to load footer dynamically
       fetch('partials/footer.html')
         .then(response => response.text())
