@@ -449,3 +449,26 @@ section {
     }
 
 /*******END OF STYLE FOR projects.html*********/
+
+/*******STYLE FOR logos.html*********/
+.project-card:hover {
+      transform: translateY(-5px);
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .logo-img {
+      max-height: 160px;
+      object-fit: contain;
+    }
+
+    .modal-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .modal-title {
+      font-size: 1.25rem;
+
+    }
+/*******END OF STYLE FOR logos.html*********/
