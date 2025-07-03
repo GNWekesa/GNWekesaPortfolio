@@ -192,11 +192,24 @@
 
   <script>
       // this goes to all html pages to load navbar dynamically
+      //fetch('partials/navbar.html')
+       // .then(response => response.text())
+       // .then(html => {
+        //  document.getElementById('navbar-placeholder').innerHTML = html;
+      //  });
+      //below fix since the navbar was not loading
+      // this goes to all html pages to load navbar dynamically
       fetch('partials/navbar.html')
-        .then(response => response.text())
+        .then(res => {
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            return res.text();
+        })
         .then(html => {
-          document.getElementById('navbar-placeholder').innerHTML = html;
-        });
+            document.getElementById('navbar-placeholder').innerHTML = html;
+            console.log('✅ Navbar loaded');
+        })
+        .catch(err => console.error('❌ Navbar load failed:', err));
+
       // this goes to all html pages to load footer dynamically
       fetch('partials/footer.html')
         .then(response => response.text())
